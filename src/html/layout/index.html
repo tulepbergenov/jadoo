@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a
+              href="#"
+              aria-label="Logo Jadoo"
+              class="header__logo logo logo_primary"
+            >
+              <img
+                src="/imgs/logo.svg"
+                width="115"
+                height="34"
+                alt="Jadoo"
+                class="logo_img"
+              />
+            </a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li>
+                  <a href="#destinations" class="menu__link">Destinations</a>
+                </li>
+                <li>
+                  <a href="#hotels" class="menu__link">Hotels</a>
+                </li>
+                <li>
+                  <a href="#flights" class="menu__link">Flights</a>
+                </li>
+                <li>
+                  <a href="#bookings" class="menu__link">Bookings</a>
+                </li>
+                <li>
+                  <a href="#hotels" class="menu__link">Hotels</a>
+                </li>
+              </ul>
+            </nav>
+            <section>
+              <ul>
+                <li>
+                  <button type="button">Login</button>
+                </li>
+                <li>
+                  <button type="button">Sign up</button>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <button type="button">En</button>
+              <ul>
+                <li>
+                  <button type="button">En</button>
+                </li>
+                <li>
+                  <button type="button">Ru</button>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </header>
+      <main class="main">{% block content %} {% endblock %}</main>
+    </div>
+    <script type="module" src="/src/js/index.ts"></script>
+  </body>
+</html>
