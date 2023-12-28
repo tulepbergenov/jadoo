@@ -1,0 +1,11 @@
+node_modules/
+dist/
+styleguide/
+coverage/
+!packages/vkui
+tmp/
+storybook-static/
+**/*.min.css
+**/dist/
+**/vendor/
+/_gh_pages/
