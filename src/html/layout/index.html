@@ -43,24 +43,49 @@
                 </li>
               </ul>
             </nav>
-            <section>
-              <ul>
-                <li>
-                  <button type="button">Login</button>
+            <section class="header__account header-account">
+              <ul class="header-account__list">
+                <li class="header-account__item">
+                  <a href="#login" class="header-account__link">Login</a>
                 </li>
-                <li>
-                  <button type="button">Sign up</button>
+                <li class="header-account__item">
+                  <a
+                    href="#sign-up"
+                    class="header-account__link header-account__link_outline"
+                    >Sign up</a
+                  >
                 </li>
               </ul>
             </section>
-            <section>
-              <button type="button">En</button>
-              <ul>
-                <li>
-                  <button type="button">En</button>
+            <section class="header__lang-switcher lang-switcher">
+              <button
+                id="lang-switcher"
+                type="button"
+                class="lang-switcher__current-lang-btn"
+                aria-haspopup="true"
+                aria-controls="lang-switcher-langs"
+              >
+                <span>En</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="6"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path stroke="currentColor" d="M.5.5L5 5 9.5.5"></path>
+                </svg>
+              </button>
+              <ul id="lang-switcher-langs" class="lang-switcher__list">
+                <li class="lang-switcher__item">
+                  <button type="button" class="lang-switcher__lang-btn">
+                    En
+                  </button>
                 </li>
-                <li>
-                  <button type="button">Ru</button>
+                <li class="lang-switcher__item">
+                  <button type="button" class="lang-switcher__lang-btn">
+                    Ru
+                  </button>
                 </li>
               </ul>
             </section>

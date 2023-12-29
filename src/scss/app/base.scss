@@ -19,7 +19,7 @@ html {
 *::selection {
   color: var(--clr-white);
 
-  background: var(--clr-black);
+  background: var(--clr-bg-orange);
 }
 
 body::-webkit-scrollbar {
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--clr-black);
+  background: var(--clr-text-yellow);
   border-radius: 5px;
 }
 
@@ -67,6 +67,6 @@ a:focus {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #df6951;
+  outline: 2px solid var(--clr-bg-orange);
   outline-offset: 4px;
 }
