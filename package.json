@@ -22,7 +22,7 @@
     "sass": "^1.69.6",
     "stylelint": "^16.1.0",
     "stylelint-config-rational-order-fix": "^0.1.9",
-    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
     "stylelint-order": "^6.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
