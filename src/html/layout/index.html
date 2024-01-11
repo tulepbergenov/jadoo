@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="h-full scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,16 +9,17 @@
       name="description"
       content="Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the."
     />
+    <link rel="canonical" href="https://p-jadoo.vercel.app/" />
   </head>
-  <body>
-    <div>
-      <header>
-        <p>Header</p>
-      </header>
-      <main>{% block content %} {% endblock %}</main>
-      <footer>
-        <p>Footer</p>
-      </footer>
+  <body
+    class="rendering-speed h-full bg-white text-[16px] font-normal leading-[21px] text-[#5E6282] antialiased"
+  >
+    <div
+      class="relative flex min-h-full flex-col overflow-hidden before:absolute before:-bottom-[280px] before:-right-[363px] before:-z-[1] before:h-[496px] before:w-[478px] before:rounded-full before:bg-[#D5AEE4] before:blur-[75px] before:content-[''] after:absolute after:-left-[420px] after:-top-[60px] after:-z-[1] after:h-[496px] after:w-[478px] after:rounded-full after:bg-[#D5AEE4] after:blur-[75px] after:content-['']"
+    >
+      {% include "../components/header.html" %}
+      <main class="flex-auto">{% block content %} {% endblock %}</main>
+      {% include "../components/footer.html" %}
     </div>
     <script type="module" src="/src/js/index.ts"></script>
   </body>

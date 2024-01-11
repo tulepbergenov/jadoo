@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::selection {
+  @apply bg-[#DF6951] text-white;
+}
+
+html {
+  color-scheme: light;
+}
+
+body::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply rounded-[4px] bg-[#DF6951];
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.rendering-speed {
+  text-rendering: optimizeSpeed;
+}
