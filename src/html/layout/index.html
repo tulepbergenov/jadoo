@@ -19,7 +19,9 @@
     >
       {% include "../components/skip-link.html" %} {% include
       "../components/header.html" %}
-      <main class="flex-auto">{% block content %} {% endblock %}</main>
+      <main class="flex-auto" id="main">
+        {% block content %} {% endblock %}
+      </main>
       {% include "../components/footer.html" %}
     </div>
     <img
