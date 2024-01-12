@@ -2,6 +2,10 @@
   @apply text-[#F1A501];
 }
 
+.language-picker-active > svg {
+  @apply rotate-180;
+}
+
 .language-picker-list-active {
   @apply pointer-events-auto visible translate-y-[5px] opacity-100;
 }
