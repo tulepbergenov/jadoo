@@ -62,13 +62,14 @@
           >Sign Up</a
         >
       </section>
-      <section class="ml-[42px]">
+      <section class="relative ml-[42px]" id="language-picker">
         <button
-          class="flex items-center gap-x-[7px] font-medium transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
-          aria-label="Language switcher"
-          title="Language switcher"
+          class="flex items-center gap-x-[7px] font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
+          id="language-picker-current-language"
+          aria-label="Language picker"
+          title="Language picker"
         >
-          <span>EN</span>
+          <span>En</span>
           <svg
             class="h-auto w-[12px] translate-y-[1px]"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +81,27 @@
             <path stroke="currentColor" d="M.5.5L5 5 9.5.5"></path>
           </svg>
         </button>
+        <ul
+          class="absolute flex w-full translate-y-[5px] flex-col gap-y-[5px] rounded-[5px] bg-white shadow-lg"
+          id="language-picker-list"
+        >
+          <li class="flex">
+            <button
+              class="inline-block w-full py-[5px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
+              type="button"
+            >
+              En
+            </button>
+          </li>
+          <li class="flex">
+            <button
+              class="inline-block w-full py-[5px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
+              type="button"
+            >
+              Ru
+            </button>
+          </li>
+        </ul>
       </section>
     </div>
   </div>
