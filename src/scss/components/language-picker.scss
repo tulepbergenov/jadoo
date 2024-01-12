@@ -1,0 +1,7 @@
+.language-picker-active {
+  @apply text-[#F1A501];
+}
+
+.language-picker-list-active {
+  @apply pointer-events-auto visible translate-y-[5px] opacity-100;
+}

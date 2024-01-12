@@ -62,10 +62,10 @@
           >Sign Up</a
         >
       </section>
-      <section class="relative ml-[42px]" id="language-picker">
+      <section class="relative ml-[42px]">
         <button
           class="flex items-center gap-x-[7px] font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
-          id="language-picker-current-language"
+          id="language-picker"
           aria-label="Language picker"
           title="Language picker"
         >
@@ -82,12 +82,12 @@
           </svg>
         </button>
         <ul
-          class="absolute flex w-full translate-y-[5px] flex-col gap-y-[5px] rounded-[5px] bg-white shadow-lg"
+          class="pointer-events-none invisible absolute flex w-full translate-y-[10px] flex-col rounded-[5px] bg-white opacity-0 shadow-lg transition-[pointer-events,visibility,opacity,transform] duration-200 ease-in-out"
           id="language-picker-list"
         >
           <li class="flex">
             <button
-              class="inline-block w-full py-[5px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
+              class="inline-block w-full py-[10px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
               type="button"
             >
               En
@@ -95,7 +95,7 @@
           </li>
           <li class="flex">
             <button
-              class="inline-block w-full py-[5px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
+              class="inline-block w-full py-[10px] text-center font-medium uppercase transition-colors duration-150 ease-in-out focus:outline-none focus-visible:outline-[#F1A501] active:text-[#F1A501] md:hover:text-[#F1A501]"
               type="button"
             >
               Ru
