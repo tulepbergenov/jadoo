@@ -1,7 +1,21 @@
-.partners-partner-link:hover {
-  @apply shadow-lg;
+.partners-partner-link:active {
+  box-shadow:
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
-.partners-partner-link: {
-  @apply shadow;
+@media only screen and (min-width: 768px) {
+  .partners-partner-link:hover {
+    box-shadow:
+      0px 1.852px 3.148px 0px rgba(0, 0, 0, 0),
+      0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+      0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+      0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+      0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+      0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  }
 }
